@@ -1,0 +1,92 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+//預設文字顏色
+$text-color: #333333;
+
+// ====== 客制範圍 SR ======
+// 主色系變數
+$main-color01: #37473D; //主色
+$main-color02: #A8CA5B; //輔助色
+$main-color03: #F5F5F5; //輔助色
+$main-color04: #1E322F; //強調色
+
+$main-color01-light: #F1F8F6;
+$main-color02-light: #D9E2C5;
+
+.main-color01 {
+  color: $main-color01;
+}
+.main-color02 {
+  color: $main-color02;
+}
+
+.bg-color01 {
+  background-color: $main-color01;
+  color: #fff;
+}
+.bg-color01-light {
+  background-color: $main-color01-light;
+}
+.bg-color03 {
+  background-color: $main-color03;
+}
+
+.btn-color01 {
+  color: #fff;
+  background-color: $main-color01;
+  border-color: $main-color01;
+  transition: .3s;
+  &:hover {
+    color: #fff;
+    background-color: darken($main-color01, 10%);
+    border-color: darken($main-color01, 8%);
+  }
+  &.outline-btn {
+    color: $main-color01;
+    background-color: transparent;
+    transition: .3s;
+    background-color: #fff;
+    &:hover {
+      background-color: lighten($main-color01-light, 5%);
+      border-color: darken($main-color01, 5%);
+      color: $main-color01;
+    }
+  }
+}
+.btn-color02 {
+  color: #fff;
+  background-color: $main-color02;
+  border-color: $main-color02;
+  transition: .3s;
+  &:hover {
+    color: #fff;
+    background-color: darken($main-color02, 10%);
+    border-color: darken($main-color02, 8%);
+  }
+  &.outline-btn {
+    color: $main-color02;
+    background-color: transparent;
+    transition: .3s;
+    &:hover {
+      background-color: lighten($main-color02, 10%);
+      border-color: darken($main-color02, 5%);
+      color: $main-color02;
+      transform: scale(1.05);
+    }
+  }
+}
+
+// 客制變數
+$custom-box-shadow: 0px 4px 17px 0px rgba(156, 161, 186, 0.25);
+$custom-border-radius: 10px;
+.link-color {
+  color: $main-color01!important;
+  word-break: break-all;
+  transition: .3s;
+  &:hover {
+    color: darken($main-color01, 10%)!important;
+  }
+}

@@ -1,0 +1,25 @@
+nav.navbar {
+    background-color: $main-color01-light;
+    ul.navbar-nav {
+        li {
+            a {
+                img {
+                    margin-right: .25rem;
+                }
+            }
+        }
+    }
+    .social {
+        a {
+            background-color: $main-color01;
+            color: #fff;
+            width: 44px;
+            height: 44px;
+            line-height: 44px;
+            text-align: center;
+            border-radius: 22px;
+            display: inline-block;
+            margin-left: .5rem;
+        }
+    }
+}

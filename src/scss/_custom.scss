@@ -1,0 +1,12 @@
+/// 共用樣式 /// 
+body {
+    font-family: "goboto", "Noto Sans TC", sans-serif;
+    z-index: -2;
+    overflow-x: hidden;
+    background-color: #ffffff;
+}
+
+main {
+    min-height: 70vh;
+	position: relative;
+}
