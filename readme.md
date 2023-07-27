@@ -8,5 +8,6 @@ gulp watch 專案
 
 ## 應用第三方
 bootstrap @5.2.0
+font @https://github.com/max32002/FakePearl
 
 ## 檔名功能對應

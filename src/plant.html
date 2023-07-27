@@ -1,0 +1,46 @@
+<!-- index.nunjucks -->
+{% extends "layout.html" %}
+<!--TITLE setting-->
+{% block title %}
+    看到ㄉ植
+{% endblock %}
+<!--Nav setting-->
+{% block navigation %}
+{% import 'macros/nav.html' as nav %}
+<!-- Set navitem to active -->
+{{nav.active('plant')}}
+{% endblock %}
+
+<!-- 內容 -->
+{% block content %}
+<div class="container page-wrap">
+    <div class="row">
+        <div class="col-md-8">
+            <h3 class="mb-3 main-color01"><i class="fas fa-seedling me-2"></i>看到ㄉ植</h3>
+            <ul class="nav nav-pills plant-tabs" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-herb-tab" data-bs-toggle="pill" data-bs-target="#pills-herb" type="button" role="tab" aria-controls="pills-herb" aria-selected="true">草</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-woody-tab" data-bs-toggle="pill" data-bs-target="#pills-woody" type="button" role="tab" aria-controls="pills-woody" aria-selected="false">木</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-vine-tab" data-bs-toggle="pill" data-bs-target="#pills-vine" type="button" role="tab" aria-controls="pills-vine" aria-selected="false">藤</button>
+                </li>
+            </ul>
+            <div class="tab-content plant-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-herb" role="tabpanel" aria-labelledby="pills-herb-tab" tabindex="0">
+                    <h6>植物體柔軟，莖內的木質部不發達，沒有形成層。依葉脈的不同可分為單子葉草本、雙子葉草本及草質藤本。</h6>
+                </div>
+                <div class="tab-pane fade" id="pills-woody" role="tabpanel" aria-labelledby="pills-woody-tab" tabindex="0">...</div>
+                <div class="tab-pane fade" id="pills-vine" role="tabpanel" aria-labelledby="pills-vine-tab" tabindex="0">...</div>
+                <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+<!-- 單獨引用 js 放置處 -->
+{% block js %}
+<!-- <script></script> -->
+{% endblock %}
