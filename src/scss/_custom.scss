@@ -35,9 +35,19 @@ ul.plant-tabs {
             border-radius: 100px 100px 0 0;
             position: relative;
             line-height: 35px;
-            &.active {
-                background-color: $main-color02;
+            transition: .3s;
+            &:hover {
+                background-color: darken($main-color02-light, 10%);
             }
+        }
+        &.herb button.active {
+            background-color: $main-color02;
+        }
+        &.woody button.active {
+            background-color: #BA7536;
+        }
+        &.vine button.active {
+            background-color: #4F6ACB;
         }
     }
 }
@@ -47,12 +57,88 @@ ul.plant-tabs {
     border-radius: 50px 10px 10px 10px;
     .tab-pane  {
         h6 {
-            background-color: $main-color02;
             color: #fff;
             width: 100%;
             border-top-left-radius: 50px;
-            padding: 1rem;
+            padding: 1rem 1.5rem;
             text-align: center;
+        }
+        &.herb {
+            h6 {
+                background-color: $main-color02;
+            }
+            .plant-family button.active::before {
+                background-color: $main-color02;
+            }
+        } 
+        &.woody { 
+            h6 {
+                background-color: #BA7536;
+            }
+            .plant-family button.active::before {
+                background-color: #BA7536;
+            }
+        }
+        &.vine { 
+            h6 {
+                background-color: #4F6ACB;
+            }
+            .plant-family button.active::before {
+                background-color: #4F6ACB;
+            }
+        }
+        .plant-family {
+            button.nav-link {
+                color: $main-color01;
+                white-space: nowrap;
+                display: flex;
+                align-items: center;
+                &:before {
+                    content: "";
+                    clip-path: polygon(100% 50%, 0 0, 0 100%);
+                    background-color: transparent;
+                    width: 25px;
+                    height: 25px;
+                    display: inline-block;
+                    margin-left: -15px;
+                    margin-right: .25rem;
+                }
+                &.active {
+                    background-color: transparent;
+                }
+            }
+            .tab-content {
+                .tab-pane {
+                    .plant-block {
+                        position: relative;
+                        text-align: center;
+                        margin-bottom: 1rem;
+                        transition: .3s;
+                        cursor: pointer;
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                    .plant-name {
+                        background-color: $main-color01;
+                        color: #fff;
+                        padding: .25rem 1.25rem;
+                        border-radius: 20px;
+                        display: inline-block;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        top: -0.75rem;
+                        border: 1px solid #fff;
+                        box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.30);
+                    }
+                    img {
+                        border-radius: 40px 10px 10px 10px;
+                        border: 2px solid #fff;
+                        box-shadow: $custom-box-shadow;
+                    }
+                }
+            }
         }
     }
 }

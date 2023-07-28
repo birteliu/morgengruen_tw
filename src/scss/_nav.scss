@@ -18,6 +18,27 @@ nav.navbar {
     ul.navbar-nav {
         li {
             a {
+                transition: .3s;
+                position: relative;
+                &:after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 10px;
+                    height: 3px;
+                    background-color: transparent;
+                    left: calc(50% + 8px + .25rem);
+                    transform: translateX(-50%);
+                    transition: .3s;
+                    border-radius: 5px;
+                }
+                &:hover {
+                    &:after {
+                        width: 65px;
+                        color: $main-color01;
+                        background-color: $main-color02;
+                    }
+                }
                 img {
                     margin-right: .25rem;
                 }
@@ -35,6 +56,11 @@ nav.navbar {
             border-radius: 22px;
             display: inline-block;
             margin-left: .5rem;
+            transition: .3s;
+            &:hover {
+                transform: scale(1.1);
+                background-color: $main-color02;
+            }
         }
     }
 }
