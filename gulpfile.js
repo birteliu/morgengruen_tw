@@ -47,7 +47,7 @@ function clean() {
 // Images task
 function images() {
   return gulp
-    .src("src/images/*")
+    .src("src/images/**/*")
     .pipe(newer("dist/images"))
     .pipe(
       imagemin([

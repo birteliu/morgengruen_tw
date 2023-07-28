@@ -12075,6 +12075,14 @@ textarea.form-control-lg {
   color: #212a24 !important;
 }
 
+.custom-shadow {
+  box-shadow: 4px 4px 0px 0px rgba(181, 211, 203, 0.3);
+}
+
+.custom-radius {
+  border-radius: 10px;
+}
+
 nav.navbar {
   background-color: #F1F8F6;
   position: relative;
@@ -12140,7 +12148,6 @@ nav.navbar .social a:hover {
 }
 body {
   font-family: FakePearl-Regular;
-  z-index: -2;
   overflow-x: hidden;
   background-color: #ffffff;
 }
@@ -12152,12 +12159,18 @@ main {
 
 .page-wrap {
   margin-top: 4rem;
+  min-height: 70vh;
 }
 
 ul.plant-tabs {
   display: flex;
   justify-content: flex-end;
   margin-top: -40px;
+}
+@media (max-width: 767.98px) {
+  ul.plant-tabs {
+    margin-top: -15px;
+  }
 }
 ul.plant-tabs li.nav-item button {
   background-color: #D9E2C5;
@@ -12192,6 +12205,11 @@ ul.plant-tabs li.nav-item.vine button.active {
   border-top-left-radius: 50px;
   padding: 1rem 1.5rem;
   text-align: center;
+}
+@media (max-width: 767.98px) {
+  .plant-content .tab-pane h6, .plant-content .tab-pane .h6 {
+    text-align: right;
+  }
 }
 .plant-content .tab-pane.herb h6, .plant-content .tab-pane.herb .h6 {
   background-color: #A8CA5B;
@@ -12254,9 +12272,29 @@ ul.plant-tabs li.nav-item.vine button.active {
   border: 1px solid #fff;
   box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.3);
 }
+@media (max-width: 767.98px) {
+  .plant-content .tab-pane .plant-family .tab-content .tab-pane .plant-name {
+    padding: 0.25rem 0.75rem;
+  }
+}
 .plant-content .tab-pane .plant-family .tab-content .tab-pane img {
   border-radius: 40px 10px 10px 10px;
   border: 2px solid #fff;
   box-shadow: 4px 4px 0px 0px rgba(181, 211, 203, 0.3);
+}
+
+.note {
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0px 0px rgba(181, 211, 203, 0.3);
+  background: white;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  transition: 0.3s;
+}
+.note:hover {
+  border-color: #A8CA5B;
+  transform: scale(1.05);
 }
 /*# sourceMappingURL=style.css.map */

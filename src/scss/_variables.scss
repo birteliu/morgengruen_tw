@@ -90,3 +90,9 @@ $custom-border-radius: 10px;
     color: darken($main-color01, 10%)!important;
   }
 }
+.custom-shadow {
+  box-shadow: $custom-box-shadow;
+}
+.custom-radius {
+  border-radius: $custom-border-radius;
+}

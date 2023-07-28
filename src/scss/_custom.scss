@@ -7,7 +7,6 @@
 
 body {
     font-family: FakePearl-Regular;
-    z-index: -2;
     overflow-x: hidden;
     background-color: #ffffff;
 }
@@ -20,12 +19,16 @@ main {
 
 .page-wrap {
     margin-top: 4rem;
+    min-height: 70vh;
 }
 
 ul.plant-tabs {
     display: flex;
     justify-content: flex-end;
     margin-top: -40px;
+    @include media-breakpoint-down(md) {
+        margin-top: -15px;
+    }
     li.nav-item {
         button {
             background-color: $main-color02-light;
@@ -62,6 +65,9 @@ ul.plant-tabs {
             border-top-left-radius: 50px;
             padding: 1rem 1.5rem;
             text-align: center;
+            @include media-breakpoint-down(md) {
+                text-align: right;
+            }
         }
         &.herb {
             h6 {
@@ -131,6 +137,9 @@ ul.plant-tabs {
                         top: -0.75rem;
                         border: 1px solid #fff;
                         box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.30);
+                        @include media-breakpoint-down(md) {
+                            padding: .25rem .75rem;
+                        }
                     }
                     img {
                         border-radius: 40px 10px 10px 10px;
@@ -140,5 +149,19 @@ ul.plant-tabs {
                 }
             }
         }
+    }
+}
+.note {
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: $custom-border-radius;
+    box-shadow: $custom-box-shadow;
+    background: white;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    transition: .3s;
+    &:hover {
+        border-color: $main-color02;
+        transform: scale(1.05);
     }
 }
