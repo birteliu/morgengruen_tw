@@ -12101,6 +12101,9 @@ nav.navbar:after {
   border-radius: 50%;
   z-index: -1;
 }
+nav.navbar .navbar-brand img {
+  width: 200px;
+}
 nav.navbar ul.navbar-nav li a {
   transition: 0.3s;
   position: relative;

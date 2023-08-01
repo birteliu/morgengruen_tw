@@ -15,6 +15,11 @@ nav.navbar {
         border-radius: 50%;
         z-index: -1;
     }
+    .navbar-brand {
+        img {
+            width: 200px;
+        }
+    }
     ul.navbar-nav {
         li {
             a {
