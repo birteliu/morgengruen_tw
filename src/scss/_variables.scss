@@ -10,8 +10,6 @@ $text-color: #333333;
 // 主色系變數
 $main-color01: #37473D; //主色
 $main-color02: #A8CA5B; //輔助色
-$main-color03: #F5F5F5; //輔助色
-$main-color04: #1E322F; //強調色
 
 $main-color01-light: #F1F8F6;
 $main-color02-light: #D9E2C5;
@@ -29,9 +27,6 @@ $main-color02-light: #D9E2C5;
 }
 .bg-color01-light {
   background-color: $main-color01-light;
-}
-.bg-color03 {
-  background-color: $main-color03;
 }
 
 .btn-color01 {

@@ -1,0 +1,201 @@
+<!-- index.nunjucks -->
+{% extends "layout.html" %}
+<!--TITLE setting-->
+{% block title %}
+    會動ㄉ物
+{% endblock %}
+<!--Nav setting-->
+{% block navigation %}
+{% import 'macros/nav.html' as nav %}
+<!-- Set navitem to active -->
+{{nav.active('creature')}}
+{% endblock %}
+
+<!-- 內容 -->
+{% block content %}
+<div class="container page-wrap">
+    <div class="row">
+        <div class="col-md-8 mb-4">
+            <h3 class="mb-3 main-color01"><i class="fas fa-seedling me-2"></i>會動ㄉ物</h3>
+
+            <ul class="nav nav-pills classify-tabs" id="pills-tab" role="tablist">
+                <li class="nav-item anura" role="presentation">
+                  <button class="nav-link active" id="pills-anura-tab" data-bs-toggle="pill" data-bs-target="#pills-anura" type="button" role="tab" aria-controls="pills-anura" aria-selected="true">無尾目</button>
+                </li>
+                <li class="nav-item odonata" role="presentation">
+                  <button class="nav-link" id="pills-odonata-tab" data-bs-toggle="pill" data-bs-target="#pills-odonata" type="button" role="tab" aria-controls="pills-odonata" aria-selected="false">蜻蛉目</button>
+                </li>
+            </ul>
+
+            <div class="tab-content classify-content" id="pills-tabContent">
+
+                <!-- 無尾目 -->
+                <div class="tab-pane anura fade show active" id="pills-anura" role="tabpanel" aria-labelledby="pills-anura-tab" tabindex="0">
+                    <h6>卵一般產於水中，孵化成蝌蚪，用鰓呼吸，經過變態，成體主要用肺呼吸，但多數皮膚也有部分呼吸功能</h6>
+                    <div class="row classify-family g-0">
+                        <div class="col-auto">
+                            <div class="nav flex-column nav-pills mt-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                              <button class="nav-link active" id="v-pills-anuraFamily1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-anuraFamily1" type="button" role="tab" aria-controls="v-pills-anuraFamily1" aria-selected="true">蛙類</button>
+                              <button class="nav-link" id="v-pills-anuraFamily2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-anuraFamily2" type="button" role="tab" aria-controls="v-pills-anuraFamily2" aria-selected="false">蟾蜍</button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                
+                                <!-- 蛙 -->
+                                <div class="tab-pane fade show active" id="v-pills-anuraFamily1" role="tabpanel" aria-labelledby="v-pills-anuraFamily1-tab" tabindex="0">
+                                    <div class="row py-3 pe-3 ps-md-3">
+                                        <div class="col-12 mb-4">
+                                            <div class="bg-white px-3 py-1 rounded-3">
+                                                蛙體形較苗條，多善於游泳
+                                            </div>
+                                        </div>
+        
+                                        <!-- 褐樹蛙 -->
+                                        <div class="col-md-4 classify-block" data-bs-toggle="modal" data-bs-target="#frog1Modal">
+                                            <div class="classify-name">褐樹蛙</div>
+                                            <img src="images/creature/frog1.jpeg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="modal fade" id="frog1Modal" tabindex="-1" aria-labelledby="frog1ModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        褐樹蛙
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            
+                                <!-- 蟾蜍 -->
+                                <div class="tab-pane fade" id="v-pills-anuraFamily2" role="tabpanel" aria-labelledby="v-pills-anuraFamily2-tab" tabindex="0">
+                                    <div class="row py-3 pe-3 ps-md-3">
+                                        <div class="col-12 mb-4">
+                                            <div class="bg-white px-3 py-1 rounded-3">
+                                                蟾蜍多在陸地生活，因此皮膚多粗糙，大部分蟾蜍耳後有毒腺，分泌毒性分泌物，可以製作中藥
+                                            </div>
+                                        </div>
+        
+                                        <!-- 黑眶蟾蜍 -->
+                                        <div class="col-md-4 classify-block" data-bs-toggle="modal" data-bs-target="#toad1Modal"> 
+                                            <div class="classify-name">黑眶蟾蜍</div>
+                                            <img src="images/creature/toad1.jpeg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="modal fade" id="toad1Modal" tabindex="-1" aria-labelledby="toad1ModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        黑眶蟾蜍
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 蜻蛉目 -->
+                <div class="tab-pane odonata fade" id="pills-odonata" role="tabpanel" aria-labelledby="pills-odonata-tab" tabindex="0">
+                    <h6>有著碩大的複眼、兩對強而有力的透明翅膀，與及修長的腹部</h6>
+                    <div class="row classify-family g-0">
+                        <div class="col-auto">
+                            <div class="nav flex-column nav-pills mt-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                              <button class="nav-link active" id="v-pills-odonataFamily1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-odonataFamily1" type="button" role="tab" aria-controls="v-pills-odonataFamily1" aria-selected="true">蜻蜓</button>
+                              <button class="nav-link" id="v-pills-odonataFamily2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-odonataFamily2" type="button" role="tab" aria-controls="v-pills-odonataFamily2" aria-selected="true">豆娘</button>
+                            </div>
+                        </div>
+                        <div class="col">
+                                <div class="tab-content" id="v-pills-tabContent">
+
+                                <!-- 蜻蜓 -->
+                                <div class="tab-pane fade show active" id="v-pills-odonataFamily1" role="tabpanel" aria-labelledby="v-pills-odonataFamily1-tab" tabindex="0">
+                                    <div class="row py-3 pe-3 ps-md-3">
+                                        <div class="col-12 mb-4">
+                                            <div class="bg-white px-3 py-1 rounded-3">
+                                                身體扁平粗壯，兩側複眼距離較近，甚至連接；停棲時翅膀平展至兩側，「蜻蜓點水」是產卵動作
+                                            </div>
+                                        </div>
+        
+                                        <!-- 慶褐蜻 -->
+                                        <div class="col-md-4 classify-block" data-bs-toggle="modal" data-bs-target="#dragonfly1Modal"> 
+                                            <div class="classify-name">慶褐蜻</div>
+                                            <img src="images/creature/dragonfly1.jpeg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="modal fade" id="dragonfly1Modal" tabindex="-1" aria-labelledby="dragonfly1ModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        慶褐蜻
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                  </div>
+
+                                  <!-- 豆娘 -->
+                                  <div class="tab-pane fade" id="v-pills-odonataFamily2" role="tabpanel" aria-labelledby="v-pills-odonataFamily2-tab" tabindex="0">
+                                    <div class="row py-3 pe-3 ps-md-3">
+                                        <div class="col-12 mb-4">
+                                            <div class="bg-white px-3 py-1 rounded-3">
+                                                身體纖細，頭部似啞鈴狀，兩側為明顯的複眼，停棲時多數會將翅疊合在一起
+                                            </div>
+                                        </div>
+        
+                                        <!-- 白痣珈蟌 -->
+                                        <div class="col-md-4 classify-block" data-bs-toggle="modal" data-bs-target="#damselfly1Modal"> 
+                                            <div class="classify-name">白痣珈蟌</div>
+                                            <img src="images/creature/damselfly1.jpeg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="modal fade" id="damselfly1Modal" tabindex="-1" aria-labelledby="damselfly1ModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        白痣珈蟌
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <h3 class="mb-3 main-color01 text-md-end"><i class="fas fa-pen-nib me-2"></i>NOTE</h3>
+            <div class="bg-color01-light p-3">
+                <div>2023/06/25</div>
+                <div class="note" data-bs-toggle="modal" data-bs-target="#note1Modal">莖幹細長、不能支持自身重量而直立生長，只能藉助支持物(樹、牆等)攀緣向上生長，或匍匐於地面生長的一類植物，大部分藤本植物都是有花植物。</div>
+                <!-- Modal -->
+                <div class="modal fade" id="note1Modal" tabindex="-1" aria-labelledby="note1ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                            note1
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>2023/06/25</div>
+                <div class="note">植物體柔軟，莖內的木質部不發達，沒有形成層。依葉脈的不同可分為單子葉草本、雙子葉草本及草質藤本。</div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+<!-- 單獨引用 js 放置處 -->
+{% block js %}
+<!-- <script></script> -->
+{% endblock %}

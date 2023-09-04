@@ -12016,10 +12016,6 @@ textarea.form-control-lg {
   background-color: #F1F8F6;
 }
 
-.bg-color03 {
-  background-color: #F5F5F5;
-}
-
 .btn-color01 {
   color: #fff;
   background-color: #37473D;
@@ -12166,17 +12162,17 @@ main {
   min-height: 70vh;
 }
 
-ul.plant-tabs {
+ul.classify-tabs {
   display: flex;
   justify-content: flex-end;
   margin-top: -40px;
 }
 @media (max-width: 767.98px) {
-  ul.plant-tabs {
+  ul.classify-tabs {
     margin-top: -15px;
   }
 }
-ul.plant-tabs li.nav-item button {
+ul.classify-tabs li.nav-item button {
   background-color: #D9E2C5;
   color: #fff;
   width: 80px;
@@ -12186,24 +12182,30 @@ ul.plant-tabs li.nav-item button {
   line-height: 35px;
   transition: 0.3s;
 }
-ul.plant-tabs li.nav-item button:hover {
+ul.classify-tabs li.nav-item button:hover {
   background-color: #c3d1a3;
 }
-ul.plant-tabs li.nav-item.herb button.active {
+ul.classify-tabs li.nav-item.herb button.active {
   background-color: #A8CA5B;
 }
-ul.plant-tabs li.nav-item.woody button.active {
+ul.classify-tabs li.nav-item.woody button.active {
   background-color: #BA7536;
 }
-ul.plant-tabs li.nav-item.vine button.active {
+ul.classify-tabs li.nav-item.vine button.active {
   background-color: #4F6ACB;
 }
+ul.classify-tabs li.nav-item.anura button.active {
+  background-color: #4fcb68;
+}
+ul.classify-tabs li.nav-item.odonata button.active {
+  background-color: #4f97cb;
+}
 
-.plant-content {
+.classify-content {
   background-color: #F1F8F6;
   border-radius: 50px 10px 10px 10px;
 }
-.plant-content .tab-pane h6, .plant-content .tab-pane .h6 {
+.classify-content .tab-pane h6, .classify-content .tab-pane .h6 {
   color: #fff;
   width: 100%;
   border-top-left-radius: 50px;
@@ -12211,35 +12213,47 @@ ul.plant-tabs li.nav-item.vine button.active {
   text-align: center;
 }
 @media (max-width: 767.98px) {
-  .plant-content .tab-pane h6, .plant-content .tab-pane .h6 {
+  .classify-content .tab-pane h6, .classify-content .tab-pane .h6 {
     text-align: right;
   }
 }
-.plant-content .tab-pane.herb h6, .plant-content .tab-pane.herb .h6 {
+.classify-content .tab-pane.herb h6, .classify-content .tab-pane.herb .h6 {
   background-color: #A8CA5B;
 }
-.plant-content .tab-pane.herb .plant-family button.active::before {
+.classify-content .tab-pane.herb .classify-family button.active::before {
   background-color: #A8CA5B;
 }
-.plant-content .tab-pane.woody h6, .plant-content .tab-pane.woody .h6 {
+.classify-content .tab-pane.woody h6, .classify-content .tab-pane.woody .h6 {
   background-color: #BA7536;
 }
-.plant-content .tab-pane.woody .plant-family button.active::before {
+.classify-content .tab-pane.woody .classify-family button.active::before {
   background-color: #BA7536;
 }
-.plant-content .tab-pane.vine h6, .plant-content .tab-pane.vine .h6 {
+.classify-content .tab-pane.vine h6, .classify-content .tab-pane.vine .h6 {
   background-color: #4F6ACB;
 }
-.plant-content .tab-pane.vine .plant-family button.active::before {
+.classify-content .tab-pane.vine .classify-family button.active::before {
   background-color: #4F6ACB;
 }
-.plant-content .tab-pane .plant-family button.nav-link {
+.classify-content .tab-pane.anura h6, .classify-content .tab-pane.anura .h6 {
+  background-color: #4fcb68;
+}
+.classify-content .tab-pane.anura .classify-family button.active::before {
+  background-color: #4fcb68;
+}
+.classify-content .tab-pane.odonata h6, .classify-content .tab-pane.odonata .h6 {
+  background-color: #4f97cb;
+}
+.classify-content .tab-pane.odonata .classify-family button.active::before {
+  background-color: #4f97cb;
+}
+.classify-content .tab-pane .classify-family button.nav-link {
   color: #37473D;
   white-space: nowrap;
   display: flex;
   align-items: center;
 }
-.plant-content .tab-pane .plant-family button.nav-link:before {
+.classify-content .tab-pane .classify-family button.nav-link:before {
   content: "";
   -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
           clip-path: polygon(100% 50%, 0 0, 0 100%);
@@ -12250,20 +12264,20 @@ ul.plant-tabs li.nav-item.vine button.active {
   margin-left: -15px;
   margin-right: 0.25rem;
 }
-.plant-content .tab-pane .plant-family button.nav-link.active {
+.classify-content .tab-pane .classify-family button.nav-link.active {
   background-color: transparent;
 }
-.plant-content .tab-pane .plant-family .tab-content .tab-pane .plant-block {
+.classify-content .tab-pane .classify-family .tab-content .tab-pane .classify-block {
   position: relative;
   text-align: center;
   margin-bottom: 1rem;
   transition: 0.3s;
   cursor: pointer;
 }
-.plant-content .tab-pane .plant-family .tab-content .tab-pane .plant-block:hover {
+.classify-content .tab-pane .classify-family .tab-content .tab-pane .classify-block:hover {
   transform: scale(1.1);
 }
-.plant-content .tab-pane .plant-family .tab-content .tab-pane .plant-name {
+.classify-content .tab-pane .classify-family .tab-content .tab-pane .classify-name {
   background-color: #37473D;
   color: #fff;
   padding: 0.25rem 1.25rem;
@@ -12277,11 +12291,11 @@ ul.plant-tabs li.nav-item.vine button.active {
   box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.3);
 }
 @media (max-width: 767.98px) {
-  .plant-content .tab-pane .plant-family .tab-content .tab-pane .plant-name {
+  .classify-content .tab-pane .classify-family .tab-content .tab-pane .classify-name {
     padding: 0.25rem 0.75rem;
   }
 }
-.plant-content .tab-pane .plant-family .tab-content .tab-pane img {
+.classify-content .tab-pane .classify-family .tab-content .tab-pane img {
   border-radius: 40px 10px 10px 10px;
   border: 2px solid #fff;
   box-shadow: 4px 4px 0px 0px rgba(181, 211, 203, 0.3);

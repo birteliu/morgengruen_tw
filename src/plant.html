@@ -17,7 +17,7 @@
     <div class="row">
         <div class="col-md-8 mb-4">
             <h3 class="mb-3 main-color01"><i class="fas fa-seedling me-2"></i>看到ㄉ植</h3>
-            <ul class="nav nav-pills plant-tabs" id="pills-tab" role="tablist">
+            <ul class="nav nav-pills classify-tabs" id="pills-tab" role="tablist">
                 <li class="nav-item herb" role="presentation">
                   <button class="nav-link active" id="pills-herb-tab" data-bs-toggle="pill" data-bs-target="#pills-herb" type="button" role="tab" aria-controls="pills-herb" aria-selected="true">草</button>
                 </li>
@@ -28,188 +28,218 @@
                   <button class="nav-link" id="pills-vine-tab" data-bs-toggle="pill" data-bs-target="#pills-vine" type="button" role="tab" aria-controls="pills-vine" aria-selected="false">藤</button>
                 </li>
             </ul>
-            <div class="tab-content plant-content" id="pills-tabContent">
+            <div class="tab-content classify-content" id="pills-tabContent">
+
+                <!-- 草 -->
                 <div class="tab-pane herb fade show active" id="pills-herb" role="tabpanel" aria-labelledby="pills-herb-tab" tabindex="0">
                     <h6>依葉脈的不同可分為單子葉草本、雙子葉草本及草質藤本。可分為一年生、二年生和多年生草本</h6>
-                    <div class="d-flex align-items-start plant-family">
-                        <div class="nav flex-column nav-pills mt-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                          <button class="nav-link active" id="v-pills-herbFamily1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-herbFamily1" type="button" role="tab" aria-controls="v-pills-herbFamily1" aria-selected="true">大戟科</button>
-                          <button class="nav-link" id="v-pills-herbFamily2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-herbFamily2" type="button" role="tab" aria-controls="v-pills-herbFamily2" aria-selected="false">天南星科</button>
-                          <!-- <button class="nav-link" id="v-pills-family3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-family3" type="button" role="tab" aria-controls="v-pills-family3" aria-selected="false">芸香科</button> -->
+                    <div class="row classify-family g-0">
+                        <div class="col-auto">
+                            <div class="nav flex-column nav-pills mt-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                              <button class="nav-link active" id="v-pills-herbFamily1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-herbFamily1" type="button" role="tab" aria-controls="v-pills-herbFamily1" aria-selected="true">大戟科</button>
+                              <button class="nav-link" id="v-pills-herbFamily2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-herbFamily2" type="button" role="tab" aria-controls="v-pills-herbFamily2" aria-selected="false">天南星科</button>
+                            </div>
                         </div>
-                        <div class="tab-content" id="v-pills-tabContent">
-                          <div class="tab-pane fade show active" id="v-pills-herbFamily1" role="tabpanel" aria-labelledby="v-pills-herbFamily1-tab" tabindex="0">
-                            <div class="row py-3 pe-3 ps-md-3">
+                        <div class="col">
+                            <div class="tab-content" id="v-pills-tabContent">
 
-                                <div class="col-12 mb-4">
-                                    <div class="bg-white px-3 py-1 rounded-3">
-                                        通常具乳汁，花的形狀是杯狀聚傘形
-                                    </div>
-                                </div>
-
-                                <div class="col-md-4 plant-block" data-bs-toggle="modal" data-bs-target="#herb1Modal"> 
-                                    <div class="plant-name">蟲屎</div>
-                                    <img src="images/plant/herb1.jpg" class="img-fluid" alt="">
-                                </div>
-                                <!-- Modal -->
-                                <div class="modal fade" id="herb1Modal" tabindex="-1" aria-labelledby="herb1ModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                            herb1
+                                <!-- 大戟科 -->
+                                <div class="tab-pane fade show active" id="v-pills-herbFamily1" role="tabpanel" aria-labelledby="v-pills-herbFamily1-tab" tabindex="0">
+                                    <div class="row py-3 pe-3 ps-md-3">
+                                        <div class="col-12 mb-4">
+                                            <div class="bg-white px-3 py-1 rounded-3">
+                                                通常具乳汁，花的形狀是杯狀聚傘形
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-4 plant-block" data-bs-toggle="modal" data-bs-target="#herb2Modal">
-                                    <div class="plant-name">扛香藤</div>
-                                    <img src="images/plant/herb2.jpg" alt="" class="img-fluid">
-                                </div>
-                                <!-- Modal -->
-                                <div class="modal fade" id="herb2Modal" tabindex="-1" aria-labelledby="herb2ModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                            herb2
+        
+                                        <!-- 蟲屎 -->
+                                        <div class="col-md-4 classify-block" data-bs-toggle="modal" data-bs-target="#herb1Modal"> 
+                                            <div class="classify-name">蟲屎</div>
+                                            <img src="images/plant/herb1.jpg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="modal fade" id="herb1Modal" tabindex="-1" aria-labelledby="herb1ModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        蟲屎
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-4 plant-block" data-bs-toggle="modal" data-bs-target="#herb3Modal">
-                                    <div class="plant-name">粗糠柴</div>
-                                    <img src="images/plant/herb3.jpg" alt="" class="img-fluid">
-                                </div>
-                                <!-- Modal -->
-                                <div class="modal fade" id="herb3Modal" tabindex="-1" aria-labelledby="herb3ModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                            herb3
+        
+                                        <!-- 扛香藤 -->
+                                        <div class="col-md-4 classify-block" data-bs-toggle="modal" data-bs-target="#herb2Modal">
+                                            <div class="classify-name">扛香藤</div>
+                                            <img src="images/plant/herb2.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="modal fade" id="herb2Modal" tabindex="-1" aria-labelledby="herb2ModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        扛香藤
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
+        
+                                        <!-- 粗糠柴 -->
+                                        <div class="col-md-4 classify-block" data-bs-toggle="modal" data-bs-target="#herb3Modal">
+                                            <div class="classify-name">粗糠柴</div>
+                                            <img src="images/plant/herb3.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="modal fade" id="herb3Modal" tabindex="-1" aria-labelledby="herb3ModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        粗糠柴
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                        <!-- 大飛揚草 -->
+                                        <div class="col-md-4 classify-block" data-bs-toggle="modal" data-bs-target="#herb5Modal">
+                                            <div class="classify-name">大飛揚草</div>
+                                            <img src="images/plant/herb5.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="modal fade" id="herb5Modal" tabindex="-1" aria-labelledby="herb5ModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        大飛揚草
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+        
                                     </div>
                                 </div>
-
+                                
+                                <!-- 天南星科 -->
+                                <div class="tab-pane fade" id="v-pills-herbFamily2" role="tabpanel" aria-labelledby="v-pills-herbFamily2-tab" tabindex="0">
+                                    <div class="row py-3 pe-3 ps-md-3">
+                                        <div class="col-12 mb-4">
+                                            <div class="bg-white px-3 py-1 rounded-3">
+                                                常有球根莖、葉形葉脈樣式多、植物開花時會散發類似腐臭味，單子葉開花植物
+                                            </div>
+                                        </div>
+        
+                                        <!-- 魔芋 -->
+                                        <div class="col-md-4 classify-block" data-bs-toggle="modal" data-bs-target="#herb4Modal"> 
+                                            <div class="classify-name">魔芋</div>
+                                            <img src="images/plant/herb4.jpg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="modal fade" id="herb4Modal" tabindex="-1" aria-labelledby="herb4ModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                    herb4
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                </div>
                             </div>
-                          </div>
-                          <div class="tab-pane fade" id="v-pills-herbFamily2" role="tabpanel" aria-labelledby="v-pills-herbFamily2-tab" tabindex="0">
-                            <div class="row py-3 pe-3 ps-md-3">
-
-                                <div class="col-12 mb-4">
-                                    <div class="bg-white px-3 py-1 rounded-3">
-                                        常有球根莖、葉形葉脈樣式多、植物開花時會散發類似腐臭味，單子葉開花植物
-                                    </div>
-                                </div>
-
-                                <div class="col-md-4 plant-block" data-bs-toggle="modal" data-bs-target="#herb4Modal"> 
-                                    <div class="plant-name">魔芋</div>
-                                    <img src="images/plant/herb4.jpg" class="img-fluid" alt="">
-                                </div>
-                                <!-- Modal -->
-                                <div class="modal fade" id="herb4Modal" tabindex="-1" aria-labelledby="herb4ModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                            herb4
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                          </div>
-                          <!-- <div class="tab-pane fade" id="v-pills-family3" role="tabpanel" aria-labelledby="v-pills-family3-tab" tabindex="0">科3</div> -->
                         </div>
                     </div>
                 </div>
+
+                <!-- 木 -->
                 <div class="tab-pane woody fade" id="pills-woody" role="tabpanel" aria-labelledby="pills-woody-tab" tabindex="0">
                     <h6>依形態不同，分喬木、灌木、木質藤本 (藤木)。木本植物是木材的來源，均為多年生植物</h6>
-                    <div class="d-flex align-items-start plant-family">
-                        <div class="nav flex-column nav-pills mt-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                          <button class="nav-link active" id="v-pills-woodyFamily1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-woodyFamily1" type="button" role="tab" aria-controls="v-pills-woodyFamily1" aria-selected="true">芸香科</button>
-                          <!-- <button class="nav-link" id="v-pills-woodyFamily2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-woodyFamily2" type="button" role="tab" aria-controls="v-pills-woodyFamily2" aria-selected="false">山柑科</button>  -->
+                    <div class="row classify-family g-0">
+                        <div class="col-auto">
+                            <div class="nav flex-column nav-pills mt-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                              <button class="nav-link active" id="v-pills-woodyFamily1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-woodyFamily1" type="button" role="tab" aria-controls="v-pills-woodyFamily1" aria-selected="true">芸香科</button>
+                            </div>
                         </div>
-                        <div class="tab-content" id="v-pills-tabContent">
-                          <div class="tab-pane fade show active" id="v-pills-woodyFamily1" role="tabpanel" aria-labelledby="v-pills-woodyFamily1-tab" tabindex="0">
-                            <div class="row py-3 pe-3 ps-md-3">
+                        <div class="col">
+                            <div class="tab-content" id="v-pills-tabContent">
 
-                                <div class="col-12 mb-4">
-                                    <div class="bg-white px-3 py-1 rounded-3">
-                                        大部分是灌木或喬木，有強烈香氣，全體含有揮發油、葉上會有透明小點是油腺
-                                    </div>
-                                </div>
-
-                                <div class="col-md-4 plant-block" data-bs-toggle="modal" data-bs-target="#woody1Modal"> 
-                                    <div class="plant-name">烏柑仔</div>
-                                    <img src="images/plant/woody1.jpg" class="img-fluid" alt="">
-                                </div>
-                                <!-- Modal -->
-                                <div class="modal fade" id="woody1Modal" tabindex="-1" aria-labelledby="woody1ModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                            woody1
+                                <!-- 芸香科 -->
+                                <div class="tab-pane fade show active" id="v-pills-woodyFamily1" role="tabpanel" aria-labelledby="v-pills-woodyFamily1-tab" tabindex="0">
+                                    <div class="row py-3 pe-3 ps-md-3">
+                                        <div class="col-12 mb-4">
+                                            <div class="bg-white px-3 py-1 rounded-3">
+                                                大部分是灌木或喬木，有強烈香氣，全體含有揮發油、葉上會有透明小點是油腺
                                             </div>
                                         </div>
+        
+                                        <!-- 烏柑仔 -->
+                                        <div class="col-md-4 classify-block" data-bs-toggle="modal" data-bs-target="#woody1Modal"> 
+                                            <div class="classify-name">烏柑仔</div>
+                                            <img src="images/plant/woody1.jpg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="modal fade" id="woody1Modal" tabindex="-1" aria-labelledby="woody1ModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                    woody1
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+        
                                     </div>
                                 </div>
-
                             </div>
-                          </div>
-                          <div class="tab-pane fade" id="v-pills-woodyFamily2" role="tabpanel" aria-labelledby="v-pills-woodyFamily2-tab" tabindex="0">
-                            
-                          </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- 藤 -->
                 <div class="tab-pane vine fade" id="pills-vine" role="tabpanel" aria-labelledby="pills-vine-tab" tabindex="0">
                     <h6>莖幹細長、不能支持自身重量而直立生長，需藉助支持物 (樹、牆) 攀緣或匍匐於地面，大部分是有花植物</h6>
-                    <div class="d-flex align-items-start plant-family">
-                        <div class="nav flex-column nav-pills mt-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                          <!-- <button class="nav-link active" id="v-pills-vineFamily1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-vineFamily1" type="button" role="tab" aria-controls="v-pills-vineFamily1" aria-selected="true">aa</button> -->
-                          <!-- <button class="nav-link" id="v-pills-vineFamily2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-vineFamily2" type="button" role="tab" aria-controls="v-pills-vineFamily2" aria-selected="false">bb</button> -->
+                    <div class="row classify-family g-0">
+                        <div class="col-auto">
+                            <div class="nav flex-column nav-pills mt-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                              <!-- <button class="nav-link active" id="v-pills-vineFamily1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-vineFamily1" type="button" role="tab" aria-controls="v-pills-vineFamily1" aria-selected="true">aa</button> -->
+                            </div>
                         </div>
-                        <div class="tab-content" id="v-pills-tabContent">
-                          <div class="tab-pane fade show active" id="v-pills-vineFamily1" role="tabpanel" aria-labelledby="v-pills-vineFamily1-tab" tabindex="0">
-                            <div class="row py-3 pe-3 ps-md-3">
-
-                                <div class="col-12 mb-4">
-                                    <div class="bg-white px-3 py-1 rounded-3">
-                                        還沒有東東
-                                    </div>
-                                </div>
-
-                                <!-- <div class="col-md-4 plant-block" data-bs-toggle="modal" data-bs-target="#vine1Modal"> 
-                                    <div class="plant-name">sss</div>
-                                    <img src="images/plant/vine1.jpg" class="img-fluid" alt="">
-                                </div> -->
-                                <!-- Modal -->
-                                <div class="modal fade" id="vine1Modal" tabindex="-1" aria-labelledby="vine1ModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                            vine1
-                                            </div>
+                        <div class="col">
+                            <div class="tab-content" id="v-pills-tabContent">
+                              <div class="tab-pane fade show active" id="v-pills-vineFamily1" role="tabpanel" aria-labelledby="v-pills-vineFamily1-tab" tabindex="0">
+                                <div class="row py-3 pe-3 ps-md-3">
+    
+                                    <div class="col-12 mb-4">
+                                        <div class="bg-white px-3 py-1 rounded-3">
+                                            還沒有東東
                                         </div>
                                     </div>
+    
+                                    <!-- sss -->
+                                    <!-- <div class="col-md-4 classify-block" data-bs-toggle="modal" data-bs-target="#vine1Modal"> 
+                                        <div class="classify-name">sss</div>
+                                        <img src="images/plant/vine1.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="modal fade" id="vine1Modal" tabindex="-1" aria-labelledby="vine1ModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                vine1
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> -->
+    
                                 </div>
-
+                              </div>
                             </div>
-                          </div>
-                          <div class="tab-pane fade" id="v-pills-vineFamily2" role="tabpanel" aria-labelledby="v-pills-vineFamily2-tab" tabindex="0">...</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="col-md-4 mb-3">
             <h3 class="mb-3 main-color01 text-md-end"><i class="fas fa-pen-nib me-2"></i>NOTE</h3>
             <div class="bg-color01-light p-3">
+
+                <!-- Note1 -->
                 <div>2023/06/25</div>
                 <div class="note" data-bs-toggle="modal" data-bs-target="#note1Modal">莖幹細長、不能支持自身重量而直立生長，只能藉助支持物(樹、牆等)攀緣向上生長，或匍匐於地面生長的一類植物，大部分藤本植物都是有花植物。</div>
-                <!-- Modal -->
                 <div class="modal fade" id="note1Modal" tabindex="-1" aria-labelledby="note1ModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
                         <div class="modal-content">
@@ -219,8 +249,11 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Note2 -->
                 <div>2023/06/25</div>
                 <div class="note">植物體柔軟，莖內的木質部不發達，沒有形成層。依葉脈的不同可分為單子葉草本、雙子葉草本及草質藤本。</div>
+                
             </div>
         </div>
     </div>

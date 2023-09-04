@@ -11,7 +11,6 @@ body {
     background-color: #ffffff;
 }
 
-
 main {
     min-height: 70vh;
 	position: relative; 
@@ -23,7 +22,7 @@ main {
     min-height: 70vh;
 }
 
-ul.plant-tabs {
+ul.classify-tabs {
     display: flex;
     justify-content: flex-end;
     margin-top: -40px;
@@ -53,10 +52,16 @@ ul.plant-tabs {
         &.vine button.active {
             background-color: #4F6ACB;
         }
+        &.anura button.active {
+            background-color: #4fcb68;
+        }
+        &.odonata button.active {
+            background-color: #4f97cb;
+        }
     }
 }
 
-.plant-content {
+.classify-content {
     background-color: $main-color01-light;
     border-radius: 50px 10px 10px 10px;
     .tab-pane  {
@@ -74,7 +79,7 @@ ul.plant-tabs {
             h6 {
                 background-color: $main-color02;
             }
-            .plant-family button.active::before {
+            .classify-family button.active::before {
                 background-color: $main-color02;
             }
         } 
@@ -82,7 +87,7 @@ ul.plant-tabs {
             h6 {
                 background-color: #BA7536;
             }
-            .plant-family button.active::before {
+            .classify-family button.active::before {
                 background-color: #BA7536;
             }
         }
@@ -90,11 +95,27 @@ ul.plant-tabs {
             h6 {
                 background-color: #4F6ACB;
             }
-            .plant-family button.active::before {
+            .classify-family button.active::before {
                 background-color: #4F6ACB;
             }
         }
-        .plant-family {
+        &.anura { 
+            h6 {
+                background-color: #4fcb68;
+            }
+            .classify-family button.active::before {
+                background-color: #4fcb68;
+            }
+        }
+        &.odonata { 
+            h6 {
+                background-color: #4f97cb;
+            }
+            .classify-family button.active::before {
+                background-color: #4f97cb;
+            }
+        }
+        .classify-family {
             button.nav-link {
                 color: $main-color01;
                 white-space: nowrap;
@@ -116,7 +137,7 @@ ul.plant-tabs {
             }
             .tab-content {
                 .tab-pane {
-                    .plant-block {
+                    .classify-block {
                         position: relative;
                         text-align: center;
                         margin-bottom: 1rem;
@@ -126,7 +147,7 @@ ul.plant-tabs {
                             transform: scale(1.1);
                         }
                     }
-                    .plant-name {
+                    .classify-name {
                         background-color: $main-color01;
                         color: #fff;
                         padding: .25rem 1.25rem;
