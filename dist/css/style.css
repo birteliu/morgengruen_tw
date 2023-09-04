@@ -12039,29 +12039,6 @@ textarea.form-control-lg {
   color: #37473D;
 }
 
-.btn-color02 {
-  color: #fff;
-  background-color: #A8CA5B;
-  border-color: #A8CA5B;
-  transition: 0.3s;
-}
-.btn-color02:hover {
-  color: #fff;
-  background-color: #91b73b;
-  border-color: #97bf3e;
-}
-.btn-color02.outline-btn {
-  color: #A8CA5B;
-  background-color: transparent;
-  transition: 0.3s;
-}
-.btn-color02.outline-btn:hover {
-  background-color: #bcd682;
-  border-color: #9ec448;
-  color: #A8CA5B;
-  transform: scale(1.05);
-}
-
 .link-color {
   color: #37473D !important;
   word-break: break-all;
@@ -12200,6 +12177,9 @@ ul.classify-tabs li.nav-item.anura button.active {
 ul.classify-tabs li.nav-item.odonata button.active {
   background-color: #4f97cb;
 }
+ul.classify-tabs li.nav-item.spider button.active {
+  background-color: #9e5591;
+}
 
 .classify-content {
   background-color: #F1F8F6;
@@ -12214,7 +12194,9 @@ ul.classify-tabs li.nav-item.odonata button.active {
 }
 @media (max-width: 767.98px) {
   .classify-content .tab-pane h6, .classify-content .tab-pane .h6 {
-    text-align: right;
+    text-align: left;
+    border-top-left-radius: 20px;
+    padding: 1rem;
   }
 }
 .classify-content .tab-pane.herb h6, .classify-content .tab-pane.herb .h6 {
@@ -12246,6 +12228,12 @@ ul.classify-tabs li.nav-item.odonata button.active {
 }
 .classify-content .tab-pane.odonata .classify-family button.active::before {
   background-color: #4f97cb;
+}
+.classify-content .tab-pane.spider h6, .classify-content .tab-pane.spider .h6 {
+  background-color: #9e5591;
+}
+.classify-content .tab-pane.spider .classify-family button.active::before {
+  background-color: #9e5591;
 }
 .classify-content .tab-pane .classify-family button.nav-link {
   color: #37473D;

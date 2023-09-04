@@ -51,28 +51,6 @@ $main-color02-light: #D9E2C5;
     }
   }
 }
-.btn-color02 {
-  color: #fff;
-  background-color: $main-color02;
-  border-color: $main-color02;
-  transition: .3s;
-  &:hover {
-    color: #fff;
-    background-color: darken($main-color02, 10%);
-    border-color: darken($main-color02, 8%);
-  }
-  &.outline-btn {
-    color: $main-color02;
-    background-color: transparent;
-    transition: .3s;
-    &:hover {
-      background-color: lighten($main-color02, 10%);
-      border-color: darken($main-color02, 5%);
-      color: $main-color02;
-      transform: scale(1.05);
-    }
-  }
-}
 
 // 客制變數
 $custom-box-shadow: 4px 4px 0px 0px rgba(181, 211, 203, 0.30);
@@ -91,3 +69,10 @@ $custom-border-radius: 10px;
 .custom-radius {
   border-radius: $custom-border-radius;
 }
+
+$herb: $main-color02;
+$woody: #BA7536;
+$vine: #4F6ACB;
+$anura: #4fcb68;
+$odonata: #4f97cb;
+$spider: #9e5591;

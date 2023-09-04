@@ -44,19 +44,22 @@ ul.classify-tabs {
             }
         }
         &.herb button.active {
-            background-color: $main-color02;
+            background-color: $herb;
         }
         &.woody button.active {
-            background-color: #BA7536;
+            background-color: $woody;
         }
         &.vine button.active {
-            background-color: #4F6ACB;
+            background-color: $vine;
         }
         &.anura button.active {
-            background-color: #4fcb68;
+            background-color: $anura;
         }
         &.odonata button.active {
-            background-color: #4f97cb;
+            background-color: $odonata;
+        }
+        &.spider button.active {
+            background-color: $spider;
         }
     }
 }
@@ -72,7 +75,9 @@ ul.classify-tabs {
             padding: 1rem 1.5rem;
             text-align: center;
             @include media-breakpoint-down(md) {
-                text-align: right;
+                text-align: left;
+                border-top-left-radius: 20px;
+                padding: 1rem;
             }
         }
         &.herb {
@@ -85,34 +90,42 @@ ul.classify-tabs {
         } 
         &.woody { 
             h6 {
-                background-color: #BA7536;
+                background-color: $woody;
             }
             .classify-family button.active::before {
-                background-color: #BA7536;
+                background-color: $woody;
             }
         }
         &.vine { 
             h6 {
-                background-color: #4F6ACB;
+                background-color: $vine;
             }
             .classify-family button.active::before {
-                background-color: #4F6ACB;
+                background-color: $vine;
             }
         }
         &.anura { 
             h6 {
-                background-color: #4fcb68;
+                background-color: $anura;
             }
             .classify-family button.active::before {
-                background-color: #4fcb68;
+                background-color: $anura;
             }
         }
         &.odonata { 
             h6 {
-                background-color: #4f97cb;
+                background-color: $odonata;
             }
             .classify-family button.active::before {
-                background-color: #4f97cb;
+                background-color: $odonata;
+            }
+        }
+        &.spider { 
+            h6 {
+                background-color: $spider;
+            }
+            .classify-family button.active::before {
+                background-color: $spider;
             }
         }
         .classify-family {
