@@ -20,6 +20,12 @@ nav.navbar {
             width: 200px;
         }
     }
+    button.navbar-toggler {
+        border: 0;
+        &:focus {
+            box-shadow: none;
+        }
+    }
     ul.navbar-nav {
         li {
             a {
@@ -36,6 +42,9 @@ nav.navbar {
                     transform: translateX(-50%);
                     transition: .3s;
                     border-radius: 5px;
+                    @include media-breakpoint-down(md) {
+                        left: calc(3rem + 8px);
+                    }
                 }
                 &:hover {
                     &:after {
