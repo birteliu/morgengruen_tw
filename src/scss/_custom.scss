@@ -67,7 +67,11 @@ ul.classify-tabs {
 .classify-content {
     background-color: $main-color01-light;
     border-radius: 50px 10px 10px 10px;
+    box-shadow: $custom-box-shadow;
     .tab-pane  {
+        .summary {
+            line-height: 1.25;
+        }
         h6 {
             color: #fff;
             width: 100%;
@@ -76,8 +80,8 @@ ul.classify-tabs {
             text-align: center;
             @include media-breakpoint-down(md) {
                 text-align: left;
-                border-top-left-radius: 20px;
-                padding: 1rem;
+                border-top-left-radius: 16px;
+                padding: .75rem 1rem;
             }
         }
         &.herb {

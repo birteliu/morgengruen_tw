@@ -12195,6 +12195,10 @@ ul.classify-tabs li.nav-item.spider button.active {
 .classify-content {
   background-color: #F1F8F6;
   border-radius: 50px 10px 10px 10px;
+  box-shadow: 4px 4px 0px 0px rgba(181, 211, 203, 0.3);
+}
+.classify-content .tab-pane .summary {
+  line-height: 1.25;
 }
 .classify-content .tab-pane h6, .classify-content .tab-pane .h6 {
   color: #fff;
@@ -12206,8 +12210,8 @@ ul.classify-tabs li.nav-item.spider button.active {
 @media (max-width: 767.98px) {
   .classify-content .tab-pane h6, .classify-content .tab-pane .h6 {
     text-align: left;
-    border-top-left-radius: 20px;
-    padding: 1rem;
+    border-top-left-radius: 16px;
+    padding: 0.75rem 1rem;
   }
 }
 .classify-content .tab-pane.herb h6, .classify-content .tab-pane.herb .h6 {
